@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 
-@FeignClient(name="products-sevice")
+@FeignClient(name="products-service")
 public interface IProductAPI {
 
-    @GetMapping("/find")
+    @GetMapping("/product/find")
     public List<ProductDTO> findProductsByCode(@RequestBody List<Long> codes);
 }

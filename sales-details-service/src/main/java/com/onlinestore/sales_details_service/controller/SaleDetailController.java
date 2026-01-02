@@ -15,8 +15,8 @@ public class SaleDetailController {
     private ISaleDetailService iSaleDetailService;
 
     @PostMapping("/create")
-    public String createSaleDetail(@RequestBody SaleDetailDTO saleDetailDTO){
-        return iSaleDetailService.createSaleDetail(saleDetailDTO);
+    public void createSaleDetail(@RequestBody SaleDetailDTO saleDetailDTO){
+        iSaleDetailService.createSaleDetail(saleDetailDTO);
     }
 
     @GetMapping("/find/{id}")

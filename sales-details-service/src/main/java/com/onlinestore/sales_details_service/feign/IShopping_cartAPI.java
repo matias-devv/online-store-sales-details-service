@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 
-@FeignClient(name="shopping-cart-service")
+@FeignClient(name="shopping-carts-service")
 public interface IShopping_cartAPI {
 
     @GetMapping("/shopping-cart/find/{id}")

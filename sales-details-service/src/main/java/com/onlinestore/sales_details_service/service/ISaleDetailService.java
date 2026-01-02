@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface ISaleDetailService {
 
-    public String createSaleDetail(SaleDetailDTO saleDetailDTO);
+    public void createSaleDetail(SaleDetailDTO saleDetailDTO);
 
     public SaleDetailDTO findById(Long id);
 
